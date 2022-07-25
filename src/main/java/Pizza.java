@@ -17,7 +17,14 @@ public class Pizza {
 
       for (Thread step : cookingSteps) {
           step.start();
+          step.join();
       }
+
+//      // First burger
+//      adder1.start(); // Start burger
+//      adder1.join(); // Wait until burger is done
+//      long partialSum1 = adder1.getSum(); // Get burger
+//      System.out.println("paritalSum1 = " + partialSum1);
   }
 
   // DO NOT change any of the methods below
